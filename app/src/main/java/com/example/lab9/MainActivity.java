@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(this, "計時開始",Toast.LENGTH_SHORT).show();
             }else {
                 btn_start.setText("開始");
-                Toast.makeText(this, "計時開始",Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "計時暫停",Toast.LENGTH_SHORT).show();
             }
             startService(new Intent(this, MyService.class).putExtra("flag", flag));
         });
